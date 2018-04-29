@@ -1,0 +1,59 @@
+BUILD: Computing Include file dependencies:
+BUILD: Examining m:\rsync1\src\filedisk\sys\dimage directory for files to compile.
+Compiling (NoSync) m:\rsync1\src\filedisk\sys\dimage directory ********************
+1>'nmake.exe /nologo BUILDMSG=Stop. -i NTTEST= UMTEST= NOLINK=1 NOPASS0=1 PASS1_NOLIB=1 AMD64=1'
+1>BUILDMSG: Processing m:\rsync1\src\filedisk\sys\dimage
+1>    rc -l 409 -DSXS_ASSEMBLY_NAME=""""""  -DSXS_ASSEMBLY_LANGUAGE=""""""  -DSXS_PROCESSOR_ARCHITECTURE="""AMD64"""  -DSXS_TARGET="""dimage.sys"""   -DSYSTEM_COMPATIBLE_ASSEMBLY_NAME="""Microsoft.Windows.SystemCompatible"""  -DLSYSTEM_COMPATIBLE_ASSEMBLY_NAME=L"""Microsoft.Windows.SystemCompatible"""   -DSXS_ASSEMBLY_VERSION="""""" -z "MS Sans Serif,Helv/MS Shell Dlg"  -r -fo objfre_wnet_AMD64\amd64\dimage.res -D_WIN64 -D_AMD64_ -DAMD64   -DCONDITION_HANDLING=1   -DNT_INST=0 -DWIN32=100 -D_NT1X_=100 -DWINNT=1 -D_WIN32_WINNT=0x0502 /DWINVER=0x0502 -D_WIN32_IE=0x0603    -DWIN32_LEAN_AND_MEAN=1 -D_AMD64_SIMULATOR_PERF_ -D_SKIP_IF_SIMULATOR_ -D_AMD64_SIMULATOR_ -D_AMD64_WORKAROUND_ -DDEVL=1 -D__BUILDMACHINE__=WinDDK  -DNDEBUG -D_DLL=1    -IJ:\PROGRA~1\WINDDK\3790~1.183\inc\mfc42 -I. -Iobjfre_wnet_AMD64\amd64 -IJ:\PROGRA~1\WINDDK\3790~1.183\inc\wnet -IJ:\PROGRA~1\WINDDK\3790~1.183\inc\wnet -IJ:\PROGRA~1\WINDDK\3790~1.183\inc\ddk\wnet -IJ:\PROGRA~1\WINDDK\3790~1.183\inc\ddk\wdm\wnet -IJ:\PROGRA~1\WINDDK\3790~1.183\inc\crt .\dimage.rc
+1>cl -nologo  -Iamd64\ -I. -IJ:\PROGRA~1\WINDDK\3790~1.183\inc\mfc42 -I. -Iobjfre_wnet_AMD64\amd64 -IJ:\PROGRA~1\WINDDK\3790~1.183\inc\wnet -IJ:\PROGRA~1\WINDDK\3790~1.183\inc\wnet -IJ:\PROGRA~1\WINDDK\3790~1.183\inc\ddk\wnet -IJ:\PROGRA~1\WINDDK\3790~1.183\inc\ddk\wdm\wnet -IJ:\PROGRA~1\WINDDK\3790~1.183\inc\crt -D_WIN64 -D_AMD64_ -DAMD64   -DCONDITION_HANDLING=1   -DNT_INST=0 -DWIN32=100 -D_NT1X_=100 -DWINNT=1 -D_WIN32_WINNT=0x0502 /DWINVER=0x0502 -D_WIN32_IE=0x0603    -DWIN32_LEAN_AND_MEAN=1 -D_AMD64_SIMULATOR_PERF_ -D_SKIP_IF_SIMULATOR_ -D_AMD64_SIMULATOR_ -D_AMD64_WORKAROUND_ -DDEVL=1 -D__BUILDMACHINE__=WinDDK  -DNDEBUG -D_DLL=1      /c /Zl /Zp8 /Gy -cbstring /W3 /Wp64 /WX     /EHs-c-  /GR- /GF /GS -Z7 /Oxt  -Z7   -FIJ:\PROGRA~1\WINDDK\3790~1.183\inc\wnet\warning.h   .\dimage.c 
+1>dimage.c
+1>
+1>Stop.
+TESTING: Number of dirs done build libs 0 out of  1Compiling  m:\rsync1\src\filedisk\sys\dimage directory ********************
+101>'nmake.exe /nologo BUILDMSG=Stop. -i NTTEST= UMTEST= NOLINK=1 NOPASS0=1 AMD64=1'
+101>BUILDMSG: Processing m:\rsync1\src\filedisk\sys\dimage
+101>
+101>Stop.
+Linking m:\rsync1\src\filedisk\sys\dimage directory ********************
+1>'nmake.exe /nologo BUILDMSG=Stop. -i LINKONLY=1 NOPASS0=1 NTTEST= UMTEST= AMD64=1'
+1>BUILDMSG: Processing m:\rsync1\src\filedisk\sys\dimage
+1>	link -out:.\amd64\dimage.sys -machine:amd64 @J:\DOCUME~1\MELANN~1\LOCALS~1\Temp\nm15.tmp
+1>Microsoft (R) Incremental Linker Version 8.00.40310.39
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>
+1>-MERGE:_PAGE=PAGE 
+1>-MERGE:_TEXT=.text 
+1>-SECTION:INIT,d 
+1>-OPT:REF 
+1>-OPT:ICF 
+1>-IGNORE:4198,4010,4037,4039,4065,4070,4078,4087,4089,4221,4108,4088,4218 
+1>-INCREMENTAL:NO 
+1>-FULLBUILD 
+1>/release 
+1>-NODEFAULTLIB 
+1>/WX 
+1>-debug 
+1>-debugtype:cv 
+1>-version:5.2 
+1>-osversion:5.2 
+1>-debug 
+1>-debugtype:cv,fixup,pdata 
+1>/opt:nowin98 
+1>J:\PROGRA~1\WINDDK\3790~1.183\lib\wnet\amd64\hotpatch.obj 
+1>/functionpadmin:6 
+1>/pdbcompress 
+1>-STACK:0x40000,0x1000 
+1>-driver 
+1>-base:0x10000 
+1>-subsystem:native,5.02 
+1>-entry:GsDriverEntry 
+1>-out:.\amd64\dimage.sys 
+1>objfre_wnet_AMD64\amd64\dimage.res 
+1>objfre_wnet_AMD64\amd64\dimage.obj 
+1>J:\PROGRA~1\WINDDK\3790~1.183\lib\wnet\amd64\BufferOverflowK.lib 
+1>J:\PROGRA~1\WINDDK\3790~1.183\lib\wnet\amd64\ntoskrnl.lib 
+1>J:\PROGRA~1\WINDDK\3790~1.183\lib\wnet\amd64\hal.lib 
+1>J:\PROGRA~1\WINDDK\3790~1.183\lib\wnet\amd64\wmilib.lib 
+1>	echo Skip Binplace:
+1>Skip Binplace:
+1>
+1>Stop.

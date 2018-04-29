@@ -1,0 +1,293 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\ImageMount.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\ImageMount.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+1                       RT_MANIFEST             "ImageMount.exe.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 70
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Disk Image Mounting Tool"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Disk Image Mounting Tool\nver. 0.3",IDC_STATIC,40,10,119,21,SS_NOPREFIX
+    LTEXT           "Copyright © 2006-2009 Melan Nimesh\n<melanster@gmail.com>",IDC_STATIC,40,33,156,21
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_IMAGEMOUNT_DIALOG DIALOGEX 0, 0, 320, 193
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Disk Image Mounting Tool"
+FONT 8, "Tahoma", 400, 0, 0x0
+BEGIN
+    GROUPBOX        "Load Image File",IDC_STATIC,7,3,306,177
+    PUSHBUTTON      "&Mount",IDC_BROWSE,254,15,46,15
+    LTEXT           "Map to Drive",IDC_STATIC,15,17,26,8
+    COMBOBOX        IDC_DRIVE,44,16,35,13,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_LIST_MOUNT,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,11,46,298,107
+    PUSHBUTTON      "Unmount &All",IDC_UMOUNT_ALL,261,159,46,15
+    PUSHBUTTON      "&Umount",IDC_UMOUNT,207,159,46,15
+    PUSHBUTTON      "&Open",IDC_OPEN,153,159,46,15
+    PUSHBUTTON      "A&dvanced",IDC_ADV,13,159,46,15
+    CONTROL         "Create &new image file",IDC_NEW_IMAGE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,86,16,85,10
+    CONTROL         "Open CD image",IDC_CD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,173,16,65,10
+    CONTROL         "Mount as read-only image",IDC_READONLY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,86,30,99,10
+END
+
+IDD_NEW_IMAGE DIALOGEX 0, 0, 150, 74
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "New Image File"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,93,54,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,34,54,50,14
+    LTEXT           "Please Enter size of new disk image file",IDC_STATIC,18,9,125,9
+    EDITTEXT        IDC_FILESIZE,50,27,40,13,ES_RIGHT | ES_AUTOHSCROLL
+    COMBOBOX        IDC_UNIT,92,27,28,14,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_ADV DIALOGEX 0, 0, 233, 174
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Advanced Settings"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Close",IDCANCEL,176,153,50,14
+    GROUPBOX        "Service Status",IDC_STATIC,7,28,219,59
+    LTEXT           "Max number of Drivers",IDC_STATIC,12,9,74,8
+    COMBOBOX        IDC_NUM_DRV,97,8,29,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Install/Uninstall Device Driver",IDC_STATIC,7,90,219,59
+    PUSHBUTTON      "Install",IDC_INSTALL_UNSTALL,168,102,49,16,WS_DISABLED
+    LTEXT           "Static",IDC_STATIC,13,102,19,8
+    CONTROL         "Automaticaly Start Service",IDC_AS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,39,101,10
+    LTEXT           "Static",IDC_STATIC,17,56,19,8
+    PUSHBUTTON      "Start",IDC_START_STOP,168,40,49,16,WS_DISABLED
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,3,0,1
+ PRODUCTVERSION 0,3,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x3L
+#else
+ FILEFLAGS 0x2L
+#endif
+ FILEOS 0x40000L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "Melan Nimesh <melanster@gmail.com>"
+            VALUE "FileDescription", "Disk Image Mounting Tool"
+            VALUE "FileVersion", "0.3.0.1"
+            VALUE "InternalName", "ImageMount.exe"
+            VALUE "LegalCopyright", "Copyright © 2006-2009 Melan Nimesh."
+            VALUE "OriginalFilename", "ImageMount.exe"
+            VALUE "ProductName", "Disk Image Mounting Tool"
+            VALUE "ProductVersion", "0.3"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 63
+    END
+
+    IDD_IMAGEMOUNT_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 319
+        BOTTOMMARGIN, 187
+    END
+
+    IDD_NEW_IMAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 143
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 67
+    END
+
+    IDD_ADV, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 167
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_NEW_IMAGE DLGINIT
+BEGIN
+    IDC_UNIT, 0x403, 3, 0
+0x424d, "\000" 
+    IDC_UNIT, 0x403, 3, 0
+0x4247, "\000" 
+    0
+END
+
+IDD_ADV DLGINIT
+BEGIN
+    IDC_NUM_DRV, 0x403, 2, 0
+0x0031, 
+    IDC_NUM_DRV, 0x403, 2, 0
+0x0032, 
+    IDC_NUM_DRV, 0x403, 2, 0
+0x0033, 
+    IDC_NUM_DRV, 0x403, 2, 0
+0x0034, 
+    IDC_NUM_DRV, 0x403, 2, 0
+0x0035, 
+    IDC_NUM_DRV, 0x403, 2, 0
+0x0036, 
+    IDC_NUM_DRV, 0x403, 2, 0
+0x0037, 
+    IDC_NUM_DRV, 0x403, 2, 0
+0x0038, 
+    IDC_NUM_DRV, 0x403, 2, 0
+0x0039, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About Disk Image Mounting Tool"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\ImageMount.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,34 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="MSThemeCompatible" CONTENT="Yes">
+<script language="javascript" type="text/javascript">
+
+
+function Button1_onclick() {
+var msg=document.getElementById("Text1").value;
+var ret = window.external.fun1(msg);
+}
+
+
+</script>
+</HEAD>
+<BODY ID=CjstestDlg BGCOLOR=LIGHTGREY>
+
+<TABLE WIDTH=100%>
+<TR>
+<TD ALIGN=RIGHT>
+<BUTTON STYLE="WIDTH:100" ID="ButtonOK">OK</BUTTON><BR>
+<BUTTON STYLE="WIDTH:100" ID="ButtonCancel">Cancel</BUTTON>
+</TD>
+</TR>
+<TR WIDTH=100% HEIGHT=75>
+<TD ALIGN=CENTER VALIGN=BOTTOM>
+TODO: Place controls here.
+</TD>
+</TR>
+</TABLE>
+    <input id="Text1" type="text" />
+    <input id="Button1" type="button" value="button" onclick="return Button1_onclick()" />
+
+</BODY>
+</HTML>

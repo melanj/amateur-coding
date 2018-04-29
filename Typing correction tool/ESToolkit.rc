@@ -1,0 +1,245 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""ESToolkit.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+1                       RT_MANIFEST             "ESToolkit.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_EASYSINHALATOOLKIT_DIALOG DIALOGEX 0, 0, 5, 5
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTERMOUSE | WS_POPUP | WS_VISIBLE
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+END
+
+IDD_OPTIONS DIALOGEX 0, 0, 218, 95
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Options"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,161,74,50,14
+    CONTROL         "Show Splash Screen While Loading ",IDC_CH_SP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,21,155,10
+    CONTROL         "Automatically run when i log on to Windows",IDC_CH_LD,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,39,161,10
+    CONTROL         "Use ClearType method to smooth edges of screen fonts",IDC_CH_FT,
+                    "Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,15,52,196,20
+END
+
+IDD_ABOUT DIALOGEX 0, 0, 224, 143
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "OK",IDOK,84,125,55,12
+    LTEXT           "Sinhala Unicode Typing Correction Tool for Windows 7\nVersion 2.3 (VC++ 8.0)",IDC_STATIC,8,65,205,18
+    LTEXT           "Copyright © 2005-2009 Melan Nimesh.",IDC_STATIC,8,94,187,10
+    CONTROL         141,IDC_STATIC,"Static",SS_BITMAP,0,0,225,62
+    LTEXT           "http://www.melan.za.net",IDC_WEB_SITE,8,104,112,10
+    LTEXT           "E-mail:-",IDC_STATIC,8,113,25,8
+    LTEXT           "melan@opensolaris.org",IDC_E_MAIL,35,113,93,9
+END
+
+IDD_SPLASH DIALOGEX 0, 0, 230, 160
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         145,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,0,0,229,159,WS_EX_TRANSPARENT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,3,0,1
+ PRODUCTVERSION 2,3,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40000L
+ FILETYPE 0x3L
+ FILESUBTYPE 0x2L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000004e4"
+        BEGIN
+            VALUE "Comments", "Web: http://www.melan.za.net/"
+            VALUE "CompanyName", "Melan Nimesh"
+            VALUE "FileDescription", "Sinhala Unicode Typing Correction Tool "
+            VALUE "FileVersion", "2, 3, 0, 1"
+            VALUE "InternalName", "texttool"
+            VALUE "LegalCopyright", "Copyright (c) 2005-2009 Melan Nimesh."
+            VALUE "LegalTrademarks", "Sinhala Unicode Typing Correction Tool "
+            VALUE "OriginalFilename", "texttool.exe"
+            VALUE "ProductName", "Sinhala Unicode Typing Correction Tool "
+            VALUE "ProductVersion", "2, 3, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 211
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_ABOUT, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 139
+    END
+
+    IDD_SPLASH, DIALOG
+    BEGIN
+        RIGHTMARGIN, 184
+        BOTTOMMARGIN, 125
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_POPUP_MENU MENU 
+BEGIN
+    POPUP "popup"
+    BEGIN
+        MENUITEM "&About",                      ID_POPUP_ABOUT
+        MENUITEM SEPARATOR
+        MENUITEM "Options",                     ID_POPUP_OPTIONS
+        MENUITEM "&Enable/Disable",             ID_POPUP_ENABLE
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_POPUP_EXIT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_GIRL                BITMAP                  "unlimited_ms_logo_girl.bmp"
+IDB_LOGO                BITMAP                  "logo.org.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "Main.ico"
+IDI_DIS                 ICON                    "dis.ico"
+IDI_EN                  ICON                    "Ena.ico"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "ESToolkit.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

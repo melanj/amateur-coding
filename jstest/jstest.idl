@@ -1,0 +1,29 @@
+// jstest.idl : type library source for jstest.exe
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (jstest.tlb).
+
+[ uuid(5251279F-2D27-4F37-8AAA-C11815367642), version(1.0) ]
+library jstest
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	//  Primary dispatch interface for CjstestDoc
+	
+	[ uuid(C1C4D84F-CAB6-4387-985E-713880CB5786) ]
+	dispinterface Ijstest
+	{
+		properties:
+			
+		methods:
+	};
+
+	//  Class information for CjstestDoc
+	
+	[ uuid(68E2F675-62FF-46D4-A39A-3F72BD6DCF1B) ]
+	coclass jstest
+	{
+		[default] dispinterface Ijstest;
+	};
+};

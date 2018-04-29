@@ -1,0 +1,32 @@
+---------------------------
+Sinhalese Enabling Pack Setup
+---------------------------
+AVAILABLE SWITCHES:
+[/help] [/quiet] [/passive] [/uninstall] [/norestart] [/forcerestart] [/l] [/n] [/o] [/f] [/integrate:]		
+
+	/help		Displays this message
+
+SETUP MODES
+
+	/quiet		Quiet mode (no user interaction or display)
+	/passive		Unattended mode (progress bar only)
+	/uninstall		Uninstalls the package
+
+RESTART OPTIONS
+
+	/norestart  	Do not restart when installation is complete
+	/forcerestart	Restart after installation
+
+SPECIAL OPTIONS
+
+	/l	Lists installed Windows hotfixes or update packages
+	/o	Overwrite OEM files without prompting
+	/n	Do not backup files needed for uninstall
+	/f	Force other programs to close when the computer shuts down
+	/integrate:<fullpath>	Integrate this software update into <fullpath>
+
+
+---------------------------
+OK   
+---------------------------
+

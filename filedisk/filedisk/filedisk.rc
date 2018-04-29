@@ -1,0 +1,219 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\filedisk.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\filedisk.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// BIN
+//
+
+IDR_BIN                 BIN                     "filedisk.sys"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 258, 118
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About FileDisk GUI"
+FONT 8, "Tahoma", 400, 0, 0x0
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,13,13,21,20
+    LTEXT           "Filedisk GUI Version 2.0\n\nThis is a virtual disk driver for Windows NT/2000/XP/Vista that uses one or more files to emulate physical disks.\n\nBased on FileDisk, Copyright (C) 1999-2002 Bo Brantén.\n\nWritten by Melan Nimesh <melan@fedoraproject.org>",IDC_STATIC,42,11,207,69,SS_NOPREFIX
+    LTEXT           "Copyright © 2006-2008 Unlimited Multisystems",IDC_STATIC,42,84,175,8
+    DEFPUSHBUTTON   "OK",IDOK,201,92,50,16,WS_GROUP
+END
+
+IDD_FILEDISK_DIALOG DIALOGEX 0, 0, 320, 265
+STYLE DS_SETFONT | DS_CENTER | DS_CENTERMOUSE | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_CONTROLPARENT | WS_EX_APPWINDOW
+CAPTION "FileDisk GUI"
+FONT 8, "Tahoma", 400, 0, 0x0
+BEGIN
+    GROUPBOX        "Load Image File",IDC_STATIC,7,3,306,177
+    LTEXT           "Image Filename",IDC_STATIC,15,17,59,8
+    EDITTEXT        IDC_PATH,15,31,228,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Browse",IDC_BROWSE,259,31,46,15
+    LTEXT           "Map to Drive",IDC_STATIC,15,54,33,8
+    COMBOBOX        IDC_DRIVE,45,52,35,13,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Mount",IDC_MOUNT,259,55,46,15
+    CONTROL         "",IDC_LIST_MOUNT,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,11,89,298,64
+    PUSHBUTTON      "Unmount All",IDC_UMOUNT_ALL,261,159,46,15
+    PUSHBUTTON      "Umount",IDC_UMOUNT,209,159,46,15
+    GROUPBOX        "Advance",IDC_STATIC,7,190,306,68
+    PUSHBUTTON      "Install",IDC_SVC_INSTALL,14,216,46,15
+    PUSHBUTTON      "Start",IDC_SVC_START,71,216,46,15
+    PUSHBUTTON      "Stop",IDC_SVC_STOP,130,216,46,15,WS_DISABLED
+    LTEXT           "FileDisk Service",IDC_STATIC,14,202,148,10
+    PUSHBUTTON      "Open",IDC_OPEN,153,159,46,15
+    PUSHBUTTON      "Button1",IDC_BUTTON1,95,159,46,15
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,0,0,1
+ PRODUCTVERSION 2,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x3L
+#else
+ FILEFLAGS 0x2L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000004e4"
+        BEGIN
+            VALUE "Comments", "Melan Nimesh <melan@fedoraproject.org>"
+            VALUE "CompanyName", "Unlimited Multisystems"
+            VALUE "FileDescription", "FileDisk Virtual Disk Driver GUI"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "filedisk.exe"
+            VALUE "LegalCopyright", "Copyright © 2006-2008 Unlimited Multisystems, <www.unlimited.eu.org>"
+            VALUE "OriginalFilename", "filedisk.exe"
+            VALUE "ProductName", "Filedisk GUI"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 251
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 111
+    END
+
+    IDD_FILEDISK_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 258
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About FileDisk GUI"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\filedisk.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

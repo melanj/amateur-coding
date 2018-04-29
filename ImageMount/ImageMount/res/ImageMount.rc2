@@ -1,0 +1,16 @@
+//
+// ImageMount.RC2 - resources Microsoft Visual C++ does not edit directly
+//
+
+#ifdef APSTUDIO_INVOKED
+#error this file is not editable by Microsoft Visual C++
+#endif //APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+#ifdef WIN64
+IDR_BIN                 BIN                     "drivers\\x86\\dimage.sys"
+#else
+IDR_BIN                 BIN                     "drivers\\x64\\dimage.sys"
+#endif
+/////////////////////////////////////////////////////////////////////////////
