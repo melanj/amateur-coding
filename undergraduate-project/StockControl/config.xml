@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+    <Driver>MySQL ODBC 5.1 Driver</Driver>
+    <Server>127.0.0.1</Server>
+    <Database>stock</Database>
+    <User>root</User>
+    <Password>eldorado</Password>
+</Configuration>
